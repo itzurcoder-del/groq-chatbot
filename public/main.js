@@ -80,7 +80,7 @@ async function sendMessage(message) {
   appendMessage("bot", "…thinking…");
 
   try {
-    const res = await fetch("/api/chat", {
+    const res = await fetch('https://your-backend.onrender.com/chat', {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: text })
